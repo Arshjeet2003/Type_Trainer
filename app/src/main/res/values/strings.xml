@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Typer</string>
+    <string name="many_errors">Unfortunately! you made a lot of errors. Try to make less errors by decreasing your speed.</string>
+    <string name="more_errors">Oh! you should try to make less errors.</string>
+    <string name="less_errors">Great! you made very less errors.</string>
+    <string name="no_errors">Outstanding! you made no errors.</string>
+    <string name="typing_master">Outstanding! you are a typing master.</string>
+    <string name="fast_typer">Great! you can type really fast.</string>
+    <string name="good_typer">Wow! you have a good typing speed.</string>
+    <string name="improving_typer">Your typing speed is good, but you can still improve.</string>
+    <string name="slow_typer">Oh! you type too slow</string>
+</resources>
