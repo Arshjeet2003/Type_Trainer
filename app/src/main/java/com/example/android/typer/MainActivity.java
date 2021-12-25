@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,14 +19,14 @@ import java.util.StringTokenizer;
 public class MainActivity extends AppCompatActivity {
 
     TextView text_tv;
-    TextView enter_text;
+    EditText enter_text;
     TextView basic;
     TextView intermediate;
     TextView hard;
     ImageView timer;
     TextView timer_text;
     TextView swipe;
-    int count=0;
+    int count;
 
     String sentences[];
     ArrayList<String> wrong_words = new ArrayList<>();
@@ -44,14 +45,24 @@ public class MainActivity extends AppCompatActivity {
         timer = findViewById(R.id.timer);
         timer_text = findViewById(R.id.timer_text);
         swipe = findViewById(R.id.swipe);
-        SharedPreferences preferences = getSharedPreferences("training_type",MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.clear();
-        editor.apply();
 
+        SharedPreferences preferences1 = getSharedPreferences("sentences_count",MODE_PRIVATE);
+        count = preferences1.getInt("count",0);
+
+        SharedPreferences preferences = getSharedPreferences("training_type",MODE_PRIVATE);
+
+        int value = preferences.getInt("type",0);
+        if(value!=0){
+            basic.setVisibility(View.GONE);
+            intermediate.setVisibility(View.GONE);
+            hard.setVisibility(View.GONE);
+            timer.setVisibility(View.VISIBLE);
+            timer_text.setVisibility(View.VISIBLE);
+        }
         basic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPreferences.Editor editor = preferences.edit();
                 editor.putInt("type",1);
                 editor.apply();
                 basic.setVisibility(View.GONE);
@@ -64,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         intermediate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPreferences.Editor editor = preferences.edit();
                 editor.putInt("type",2);
                 editor.apply();
                 basic.setVisibility(View.GONE);
@@ -76,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         hard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPreferences.Editor editor = preferences.edit();
                 editor.putInt("type",3);
                 editor.apply();
                 basic.setVisibility(View.GONE);
@@ -91,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 timer.setVisibility(View.GONE);
                 timer_text.setVisibility(View.GONE);
                 tStart = System.currentTimeMillis();
+                total_words=0;
                 sentences = setting_sentences(preferences.getInt("type",0));
                 setting_text();
                 text_tv.setVisibility(View.VISIBLE);
@@ -104,13 +118,6 @@ public class MainActivity extends AppCompatActivity {
                 show_next_data();
             }
         });
-        swipe.setOnTouchListener(new OnSwipeTouchListener(MainActivity.this){
-            @Override
-            public void onSwipeLeft() {
-                super.onSwipeLeft();
-                show_next_data();
-            }
-        });
     }
 
     @Override
@@ -120,10 +127,27 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem){
-        if (menuItem.getItemId() == R.id.result) {
-            show_result();
+        switch (menuItem.getItemId()){
+            case R.id.result:
+                show_result();
+                break;
+            case R.id.reset:
+                reset_data();
         }
+
         return super.onOptionsItemSelected(menuItem);
+    }
+
+    private void reset_data() {
+        SharedPreferences preferences = getSharedPreferences("training_type",MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.clear();
+        editor.apply();
+        SharedPreferences preferences1 = getSharedPreferences("sentences_count",MODE_PRIVATE);
+        SharedPreferences.Editor editor1 = preferences1.edit();
+        editor1.clear();
+        editor1.apply();
+        recreate();
     }
 
     private void show_result() {
@@ -141,6 +165,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void show_next_data() {
+        SharedPreferences preferences = getSharedPreferences("sentences_count", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putInt("count", count);
+        editor.apply();
         String[] Data_text = get_data_text();
         String[] Entered_text = get_text_from_enteredData();
         int c = 0;
@@ -184,6 +212,9 @@ public class MainActivity extends AppCompatActivity {
         if(count<sentences.length) {
             count++;
         }
+        else{
+            reset_data();
+        }
     }
     private double getTimeTaken(){
         tEnd = System.currentTimeMillis();
@@ -195,12 +226,4 @@ public class MainActivity extends AppCompatActivity {
         data obj = new data();
         return obj.sentences_array(i);
     }
-//    @Override
-//    public void onBackPressed() {
-//        tStart = System.currentTimeMillis();
-//        wrong_words.clear();
-//        correct_words.clear();
-//        total_words=0;
-//        Toast.makeText(getApplicationContext(),"working",Toast.LENGTH_SHORT).show();
-//    }
 }

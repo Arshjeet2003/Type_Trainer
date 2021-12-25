@@ -62,7 +62,7 @@ public class data {
             " The Pandavas defeated the Kauravas.$" +
             " The Bhagvad Gita is a holy book of the Hindus.$" +
             " It is a part of the Mahabharata.$" +
-            " Then, Lord Rama, with the help of It is a book of collection of teachings of Lord Krishna to Arjuna in the battlefield.$" +
+            " It is a book of collection of teachings of Lord Krishna to Arjuna in the battlefield.$" +
             " It is the longest epic in the world.$" +
             " The Ramayana is a story of Lord Rama written by the SageValmiki.$" +
             " Lord Rama, the prince of Ayodhya, in order to help his father Dasharatha went to exile for fourteen years.$" +

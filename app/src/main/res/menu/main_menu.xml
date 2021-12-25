@@ -8,5 +8,11 @@
         android:icon="@drawable/ic_baseline_check_24"
         app:showAsAction="always"
         />
+    <item
+        android:title="reset"
+        android:id="@+id/reset"
+        android:icon="@drawable/reset"
+        app:showAsAction="always"
+        />
 
 </menu>

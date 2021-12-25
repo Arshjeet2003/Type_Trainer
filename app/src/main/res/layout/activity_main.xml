@@ -14,7 +14,7 @@
         <TextView
             android:id="@+id/text_tv"
             android:layout_width="match_parent"
-            android:layout_height="241dp"
+            android:layout_height="wrap_content"
             android:gravity="start"
             android:padding="10dp"
             android:textSize="35sp"
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:hint="Enter text here"
-            android:inputType="textMultiLine|text"
+            android:inputType="textNoSuggestions|textFilter"
             android:padding="10dp"
             android:textSize="35sp"
             android:visibility="invisible" />

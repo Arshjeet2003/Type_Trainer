@@ -45,7 +45,7 @@ public class result extends AppCompatActivity {
         ArrayList<String> finalList = new ArrayList<>();
         int c=0;
         while (c<correct_words.size() && c<wrong_words.size()){
-            finalList.add(correct_words.get(c)+"        "+String.format("%45s",wrong_words.get(c)));
+            finalList.add("       "+correct_words.get(c)+"        "+String.format("%38s",wrong_words.get(c)));
             c++;
         }
         Intent intent1 = new Intent(result.this,Wrong_words.class);
@@ -82,5 +82,10 @@ public class result extends AppCompatActivity {
         else{
             speed.setText(R.string.typing_master);
         }
+    }
+        @Override
+    public void onBackPressed() {
+            Intent intent = new Intent(result.this,MainActivity.class);
+            startActivity(intent);
     }
 }
