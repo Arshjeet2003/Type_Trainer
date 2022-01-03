@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="soundList">
+        <item>"chime1"</item>
+        <item>"chime2"</item>
+    </array>
+
+    <array name="font">
+        <item>"aargh"</item>
+        <item>"adamina"</item>
+        <item>"damion"</item>
+        <item>"licorice"</item>
+        <item>"monospace"</item>
+        <item>"playfair"</item>
+        <item>"shizuru"</item>
+        <item>"ubuntu"</item>
+
+    </array>
+
+</resources>

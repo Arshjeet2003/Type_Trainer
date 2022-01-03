@@ -14,5 +14,10 @@
         android:icon="@drawable/reset"
         app:showAsAction="always"
         />
+    <item
+        android:title="settings"
+        android:id="@+id/settings"
+        app:showAsAction="never"
+        />
 
 </menu>

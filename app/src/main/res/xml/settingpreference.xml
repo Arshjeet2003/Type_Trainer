@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ListPreference
+    android:defaultValue="@string/chime1"
+    android:entries="@array/soundList"
+    android:entryValues="@array/soundList"
+    android:key="@string/soundList_key"
+    android:title="@string/soundList_title"
+    />
+
+    <ListPreference
+        android:defaultValue="@string/default_font"
+        android:entries="@array/font"
+        android:entryValues="@array/font"
+        android:key="@string/fontType_key"
+        android:title="@string/fonts"
+        />
+
+<EditTextPreference
+    android:defaultValue="@string/default_font_size"
+    android:key="@string/font_key"
+    android:title="@string/font_title"
+    android:singleLine="true"
+    android:inputType="number"
+    />
+
+
+
+</PreferenceScreen>

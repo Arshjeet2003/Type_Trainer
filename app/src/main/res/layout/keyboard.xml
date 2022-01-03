@@ -1,0 +1,509 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/button_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="1"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="2"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="3"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="4"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="5"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="6"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="7"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="8"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="9"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/button_0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/q_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="q"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/w_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="w"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/e_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="e"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/r_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="r"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="t"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/y_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="y"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/u_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="u"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/i_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="i"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/o_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="o"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/p_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="p"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/a_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="a"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/s_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="s"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/d_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="d"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/f_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="f"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/g_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="g"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/h_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="h"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/j_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="j"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/k_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="k"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/l_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="l"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/caps_tv"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_keyboard_capslock_24"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/z_tv"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="z"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/x_tv"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="x"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/c_tv"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="c"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/v_tv"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="v"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/b_tv"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="b"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/n_tv"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="n"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/m_tv"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="m"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/back_tv"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/backspace"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/excl_tv"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="!"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/comma"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=","
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Space"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/full_stop"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="."
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/done"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/enter"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

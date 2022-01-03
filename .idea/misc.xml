@@ -7,15 +7,22 @@
         <entry key="..\:/Apps/Typer/app/src/main/res/layout/activity_result.xml" value="0.33" />
         <entry key="..\:/Apps/Typer/app/src/main/res/layout/activity_wrong_words.xml" value="0.19583333333333333" />
         <entry key="..\:/Apps/Typer/app/src/main/res/menu/main_menu.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable/backspace.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/enter.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/drawable/next.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_result.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_wrong_words.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/keyboard.xml" value="0.3042163962119251" />
         <entry key="app/src/main/res/layout/keyboard_preview.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/keyboard_view.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/method.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/mykeyboard.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/xml/keys_layout.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/xml/settingpreference.xml" value="0.3098958333333333" />
       </map>
     </option>
   </component>

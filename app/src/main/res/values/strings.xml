@@ -9,4 +9,23 @@
     <string name="good_typer">Wow! you have a good typing speed.</string>
     <string name="improving_typer">Your typing speed is good, but you can still improve.</string>
     <string name="slow_typer">Oh! you type too slow</string>
+    <string name="soundList_default">chime1</string>
+    <string name="chime1">chime1</string>
+    <string name="chime2">chime2</string>
+    <string name="soundList_title">Sounds</string>
+    <string name="soundList_key" translatable="false">soundList_key</string>
+    <string name="font_title">Font Size</string>
+    <string name="font_key">font_key</string>
+    <string name="default_font_size">30</string>
+    <string name="default_font">playfair</string>
+    <string name="fontType_key">fontType_key</string>
+    <string name="fonts">Fonts</string>
+    <string name="aargh_font">aargh</string>
+    <string name="adamina_font">adamina</string>
+    <string name="damion_font">damion</string>
+    <string name="licorice_font">licorice</string>
+    <string name="monospace_font">monospace</string>
+    <string name="playfair_font">playfair</string>
+    <string name="shizuru_font">shizuru</string>
+    <string name="ubuntu_font">ubuntu</string>
 </resources>
